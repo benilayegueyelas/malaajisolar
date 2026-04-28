@@ -55,15 +55,44 @@ export const CITIES: CityData[] = [
       countryCode: "SN",
     },
     realisations: [
-      { img: batteries, title: "Parc batteries showroom Thiès", power: "Multi-rack", desc: "Stock permanent de batteries lithium Livoltek pour projets résidentiels et industriels." },
-      { img: team, title: "Formation technique sur site", power: "—", desc: "Formation client à l'utilisation et au monitoring des systèmes installés." },
-      { img: stock, title: "Logistique & disponibilité immédiate", power: "—", desc: "Onduleurs, panneaux et accessoires Livoltek certifiés en stock à Thiès." },
+      {
+        img: batteries,
+        title: "Parc batteries showroom Thiès",
+        power: "Multi-rack",
+        desc: "Stock permanent de batteries lithium Livoltek pour projets résidentiels et industriels.",
+      },
+      {
+        img: team,
+        title: "Formation technique sur site",
+        power: "—",
+        desc: "Formation client à l'utilisation et au monitoring des systèmes installés.",
+      },
+      {
+        img: stock,
+        title: "Logistique & disponibilité immédiate",
+        power: "—",
+        desc: "Onduleurs, panneaux et accessoires Livoltek certifiés en stock à Thiès.",
+      },
     ],
     testimonials: [
-      { name: "Mamadou D.", role: "Particulier, Thiès Nord", quote: "Installation rapide et propre. Plus aucune coupure depuis 8 mois, et l'équipe a pris le temps de tout m'expliquer." },
-      { name: "Aïssatou F.", role: "Commerçante, marché central", quote: "J'ai économisé près de 60% sur ma facture Senelec dès le premier mois. Je recommande vivement Malaaji." },
+      {
+        name: "Mamadou D.",
+        role: "Particulier, Thiès Nord",
+        quote:
+          "Installation rapide et propre. Plus aucune coupure depuis 8 mois, et l'équipe a pris le temps de tout m'expliquer.",
+      },
+      {
+        name: "Aïssatou F.",
+        role: "Commerçante, marché central",
+        quote:
+          "J'ai économisé près de 60% sur ma facture Senelec dès le premier mois. Je recommande vivement Malaaji.",
+      },
     ],
-    highlights: ["Showroom & entrepôt sur place", "Intervention sous 24h", "Installateur officiel Livoltek"],
+    highlights: [
+      "Showroom & entrepôt sur place",
+      "Intervention sous 24h",
+      "Installateur officiel Livoltek",
+    ],
   },
   {
     slug: "dakar",
@@ -81,12 +110,32 @@ export const CITIES: CityData[] = [
       countryCode: "SN",
     },
     realisations: [
-      { img: centrale, title: "Mini-centrale entreprise 169 kWc", power: "90 KVA / 200 kWh", desc: "Deux onduleurs Livoltek + parc batterie pour autonomie totale d'un site industriel." },
-      { img: batteries, title: "Backup résidentiel Almadies", power: "10 KVA / 15 kWh", desc: "Système hybride pour villa avec piscine, climatisation et zéro coupure." },
+      {
+        img: centrale,
+        title: "Mini-centrale entreprise 169 kWc",
+        power: "90 KVA / 200 kWh",
+        desc: "Deux onduleurs Livoltek + parc batterie pour autonomie totale d'un site industriel.",
+      },
+      {
+        img: batteries,
+        title: "Backup résidentiel Almadies",
+        power: "10 KVA / 15 kWh",
+        desc: "Système hybride pour villa avec piscine, climatisation et zéro coupure.",
+      },
     ],
     testimonials: [
-      { name: "Cheikh N.", role: "Directeur PME, Plateau", quote: "ROI atteint en moins de 3 ans. L'équipe Malaaji est professionnelle et le SAV répond très vite." },
-      { name: "Fatou S.", role: "Propriétaire villa, Almadies", quote: "Plus aucune dépendance à Senelec la nuit. Installation soignée, design discret sur la toiture." },
+      {
+        name: "Cheikh N.",
+        role: "Directeur PME, Plateau",
+        quote:
+          "ROI atteint en moins de 3 ans. L'équipe Malaaji est professionnelle et le SAV répond très vite.",
+      },
+      {
+        name: "Fatou S.",
+        role: "Propriétaire villa, Almadies",
+        quote:
+          "Plus aucune dépendance à Senelec la nuit. Installation soignée, design discret sur la toiture.",
+      },
     ],
     highlights: ["Kits anti-coupures villas", "Autoconsommation entreprise", "Bornes recharge VE"],
   },
@@ -106,12 +155,32 @@ export const CITIES: CityData[] = [
       countryCode: "SN",
     },
     realisations: [
-      { img: saintLouis, title: "Système AIO 5 KVA + 5 kWh", power: "5 KVA / 5 kWh", desc: "Installation résidentielle Livoltek tout-en-un avec stockage lithium." },
-      { img: koki, title: "Forage solaire de Koki Diop", power: "29 kWc", desc: "Pompe électrique pour eau potable, zone rurale Saint-Louis." },
+      {
+        img: saintLouis,
+        title: "Système AIO 5 KVA + 5 kWh",
+        power: "5 KVA / 5 kWh",
+        desc: "Installation résidentielle Livoltek tout-en-un avec stockage lithium.",
+      },
+      {
+        img: koki,
+        title: "Forage solaire de Koki Diop",
+        power: "29 kWc",
+        desc: "Pompe électrique pour eau potable, zone rurale Saint-Louis.",
+      },
     ],
     testimonials: [
-      { name: "Ibrahima B.", role: "Hôtelier, Langue de Barbarie", quote: "Mes clients ne subissent plus de coupures. Investissement rentabilisé sur la haute saison touristique." },
-      { name: "Aminata D.", role: "Maraîchère, périphérie", quote: "Ma pompe solaire fonctionne tous les jours. Plus de gasoil, plus de pannes, juste l'eau qui coule." },
+      {
+        name: "Ibrahima B.",
+        role: "Hôtelier, Langue de Barbarie",
+        quote:
+          "Mes clients ne subissent plus de coupures. Investissement rentabilisé sur la haute saison touristique.",
+      },
+      {
+        name: "Aminata D.",
+        role: "Maraîchère, périphérie",
+        quote:
+          "Ma pompe solaire fonctionne tous les jours. Plus de gasoil, plus de pannes, juste l'eau qui coule.",
+      },
     ],
     highlights: ["Kits AIO résidentiels", "Pompage agricole", "Adapté climat côtier"],
   },
@@ -131,12 +200,31 @@ export const CITIES: CityData[] = [
       countryCode: "SN",
     },
     realisations: [
-      { img: kayar, title: "Kit 5 KVA / 5 kWh résidentiel", power: "5 KVA / 5 kWh", desc: "Villa secondaire Saly : autonomie complète week-ends et vacances." },
-      { img: centrale, title: "Mini-centrale lodge touristique", power: "30 KW", desc: "Mini-centrale pour lodge éco-touristique sur la Petite Côte." },
+      {
+        img: kayar,
+        title: "Kit 5 KVA / 5 kWh résidentiel",
+        power: "5 KVA / 5 kWh",
+        desc: "Villa secondaire Saly : autonomie complète week-ends et vacances.",
+      },
+      {
+        img: centrale,
+        title: "Mini-centrale lodge touristique",
+        power: "30 KW",
+        desc: "Mini-centrale pour lodge éco-touristique sur la Petite Côte.",
+      },
     ],
     testimonials: [
-      { name: "Jean-Marc P.", role: "Gérant lodge, Saly", quote: "Mes clients adorent l'aspect éco-responsable, et moi j'adore ne plus payer de groupe électrogène." },
-      { name: "Awa K.", role: "Restauratrice, Nianing", quote: "Installation faite en 2 jours, frigos et cuisine tournent sans interruption." },
+      {
+        name: "Jean-Marc P.",
+        role: "Gérant lodge, Saly",
+        quote:
+          "Mes clients adorent l'aspect éco-responsable, et moi j'adore ne plus payer de groupe électrogène.",
+      },
+      {
+        name: "Awa K.",
+        role: "Restauratrice, Nianing",
+        quote: "Installation faite en 2 jours, frigos et cuisine tournent sans interruption.",
+      },
     ],
     highlights: ["Kits villas secondaires", "Hôtels & lodges", "Maintenance saisonnière"],
   },
@@ -156,12 +244,32 @@ export const CITIES: CityData[] = [
       countryCode: "SN",
     },
     realisations: [
-      { img: sinthiou, title: "Pompe AC/DC 2200 W", power: "2.2 kW", desc: "Pompage solaire pour irrigation et agriculture villageoise." },
-      { img: koki, title: "Forage solaire 29 kWc", power: "29 kWc", desc: "Eau potable pour village du Bassin arachidier." },
+      {
+        img: sinthiou,
+        title: "Pompe AC/DC 2200 W",
+        power: "2.2 kW",
+        desc: "Pompage solaire pour irrigation et agriculture villageoise.",
+      },
+      {
+        img: koki,
+        title: "Forage solaire 29 kWc",
+        power: "29 kWc",
+        desc: "Eau potable pour village du Bassin arachidier.",
+      },
     ],
     testimonials: [
-      { name: "Modou T.", role: "Coopérative agricole", quote: "Notre périmètre maraîcher est passé en irrigation solaire. Rendements en hausse, charges en baisse." },
-      { name: "Fatim N.", role: "Commerçante, marché Kaolack", quote: "Mon congélateur tourne 24h/24 grâce au kit Malaaji. Mes produits ne se gâtent plus." },
+      {
+        name: "Modou T.",
+        role: "Coopérative agricole",
+        quote:
+          "Notre périmètre maraîcher est passé en irrigation solaire. Rendements en hausse, charges en baisse.",
+      },
+      {
+        name: "Fatim N.",
+        role: "Commerçante, marché Kaolack",
+        quote:
+          "Mon congélateur tourne 24h/24 grâce au kit Malaaji. Mes produits ne se gâtent plus.",
+      },
     ],
     highlights: ["Pompage agricole", "Mini-réseaux villages", "Kits commerces"],
   },

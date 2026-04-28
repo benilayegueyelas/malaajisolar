@@ -58,11 +58,7 @@ export function MediaPlaceholder({
 
   return (
     <div
-      className={cn(
-        "relative w-full overflow-hidden bg-secondary",
-        ratioClass[ratio],
-        className,
-      )}
+      className={cn("relative w-full overflow-hidden bg-secondary", ratioClass[ratio], className)}
     >
       {hasSrc ? (
         <img

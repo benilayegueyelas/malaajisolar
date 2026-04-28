@@ -7,9 +7,16 @@ export const Route = createFileRoute("/plan-du-site")({
   head: () => ({
     meta: [
       { title: "Plan du site — Malaaji Solar" },
-      { name: "description", content: "Plan du site Malaaji Solar : accédez rapidement à toutes les pages, services solaires et zones d'intervention au Sénégal." },
+      {
+        name: "description",
+        content:
+          "Plan du site Malaaji Solar : accédez rapidement à toutes les pages, services solaires et zones d'intervention au Sénégal.",
+      },
       { property: "og:title", content: "Plan du site — Malaaji Solar" },
-      { property: "og:description", content: "Toutes les pages et services de Malaaji Solar en un coup d'œil." },
+      {
+        property: "og:description",
+        content: "Toutes les pages et services de Malaaji Solar en un coup d'œil.",
+      },
     ],
     links: [{ rel: "canonical", href: "https://malaaji-solar.sn/plan-du-site" }],
   }),
@@ -65,12 +72,15 @@ function SitemapPage() {
     <Layout>
       <section className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Plan du site</span>
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+            Plan du site
+          </span>
           <h1 className="mt-3 text-4xl md:text-6xl font-bold leading-tight">
             Toutes nos pages <span className="text-hero-gradient">en un coup d'œil</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Naviguez facilement à travers le site Malaaji Solar : pages, services et zones d'intervention au Sénégal.
+            Naviguez facilement à travers le site Malaaji Solar : pages, services et zones
+            d'intervention au Sénégal.
           </p>
         </div>
       </section>
@@ -90,7 +100,9 @@ function SitemapPage() {
                     <ChevronRight className="h-4 w-4 mt-1 text-primary shrink-0 group-hover:translate-x-1 transition-smooth" />
                     <div>
                       <div className="font-medium">{l.label}</div>
-                      {l.desc && <div className="text-sm text-muted-foreground mt-0.5">{l.desc}</div>}
+                      {l.desc && (
+                        <div className="text-sm text-muted-foreground mt-0.5">{l.desc}</div>
+                      )}
                     </div>
                   </Link>
                 </li>

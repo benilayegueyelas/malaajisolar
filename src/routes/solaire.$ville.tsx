@@ -86,8 +86,18 @@ export const Route = createFileRoute("/solaire/$ville")({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Accueil", item: "https://malaaji-solar.sn/" },
-              { "@type": "ListItem", position: 2, name: "Zones d'intervention", item: "https://malaaji-solar.sn/plan-du-site" },
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Accueil",
+                item: "https://malaaji-solar.sn/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Zones d'intervention",
+                item: "https://malaaji-solar.sn/plan-du-site",
+              },
               { "@type": "ListItem", position: 3, name: `Solaire à ${city.name}`, item: url },
             ],
           }),
@@ -100,8 +110,13 @@ export const Route = createFileRoute("/solaire/$ville")({
     <Layout>
       <section className="container mx-auto px-4 lg:px-8 py-32 text-center">
         <h1 className="text-4xl font-bold">Ville non couverte</h1>
-        <p className="mt-4 text-muted-foreground">Cette ville n'a pas encore de page dédiée. Contactez-nous pour un devis personnalisé.</p>
-        <Link to="/contact" className="mt-8 inline-flex items-center gap-2 bg-leaf-gradient text-primary-foreground font-semibold px-7 py-3.5 rounded-full">
+        <p className="mt-4 text-muted-foreground">
+          Cette ville n'a pas encore de page dédiée. Contactez-nous pour un devis personnalisé.
+        </p>
+        <Link
+          to="/contact"
+          className="mt-8 inline-flex items-center gap-2 bg-leaf-gradient text-primary-foreground font-semibold px-7 py-3.5 rounded-full"
+        >
           Nous contacter <ArrowRight className="h-4 w-4" />
         </Link>
       </section>
@@ -119,9 +134,13 @@ function CityPage() {
       <section className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
           <nav aria-label="Fil d'Ariane" className="text-sm text-muted-foreground mb-4">
-            <Link to="/" className="hover:text-primary">Accueil</Link>
+            <Link to="/" className="hover:text-primary">
+              Accueil
+            </Link>
             <span className="mx-2">/</span>
-            <Link to="/plan-du-site" className="hover:text-primary">Zones</Link>
+            <Link to="/plan-du-site" className="hover:text-primary">
+              Zones
+            </Link>
             <span className="mx-2">/</span>
             <span className="text-foreground">Solaire à {city.name}</span>
           </nav>
@@ -131,19 +150,30 @@ function CityPage() {
           <h1 className="mt-3 text-4xl md:text-6xl font-bold leading-tight">
             Installateur solaire à <span className="text-hero-gradient">{city.name}</span>
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground max-w-3xl leading-relaxed">{city.intro}</p>
+          <p className="mt-6 text-lg text-muted-foreground max-w-3xl leading-relaxed">
+            {city.intro}
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {city.highlights.map((h) => (
-              <span key={h} className="inline-flex items-center gap-2 bg-card border border-border rounded-full px-4 py-2 text-sm">
+              <span
+                key={h}
+                className="inline-flex items-center gap-2 bg-card border border-border rounded-full px-4 py-2 text-sm"
+              >
                 <ShieldCheck className="h-4 w-4 text-primary" /> {h}
               </span>
             ))}
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link to="/contact" className="inline-flex items-center gap-2 bg-leaf-gradient text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-elegant hover:opacity-90 transition-smooth">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 bg-leaf-gradient text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-elegant hover:opacity-90 transition-smooth"
+            >
               Devis solaire {city.name} <ArrowRight className="h-4 w-4" />
             </Link>
-            <a href="tel:+221787158888" className="inline-flex items-center gap-2 border border-border text-foreground font-semibold px-7 py-3.5 rounded-full hover:bg-secondary transition-smooth">
+            <a
+              href="tel:+221787158888"
+              className="inline-flex items-center gap-2 border border-border text-foreground font-semibold px-7 py-3.5 rounded-full hover:bg-secondary transition-smooth"
+            >
               <Phone className="h-4 w-4" /> +221 78 715 88 88
             </a>
           </div>
@@ -173,9 +203,13 @@ function CityPage() {
           <MapPin className="h-7 w-7 text-accent-glow" />
           <h3 className="mt-3 font-bold text-xl">Notre zone d'intervention</h3>
           <p className="mt-3 text-background/85 text-sm leading-relaxed">{city.address.street}</p>
-          <p className="mt-2 text-background/85 text-sm">{city.address.locality}, région de {city.address.region}, Sénégal</p>
+          <p className="mt-2 text-background/85 text-sm">
+            {city.address.locality}, région de {city.address.region}, Sénégal
+          </p>
           <div className="mt-5 pt-5 border-t border-background/20 text-sm space-y-2">
-            <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent-glow" /> +221 78 715 88 88</div>
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4 text-accent-glow" /> +221 78 715 88 88
+            </div>
             <div className="text-background/70">Lun–Ven 8h–18h · Sam 9h–14h</div>
           </div>
         </aside>
@@ -185,10 +219,15 @@ function CityPage() {
       <section id="realisations" className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <span className="text-accent font-semibold text-sm uppercase tracking-wider">Réalisations</span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold">Nos installations à {city.name} et alentours</h2>
+            <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+              Réalisations
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold">
+              Nos installations à {city.name} et alentours
+            </h2>
             <p className="mt-4 text-muted-foreground">
-              Quelques projets représentatifs livrés par Malaaji Solar dans la région de {city.region}.
+              Quelques projets représentatifs livrés par Malaaji Solar dans la région de{" "}
+              {city.region}.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -228,22 +267,22 @@ function CityPage() {
                       {hasDesc ? p.desc : fallbackDesc}
                     </p>
                     <div className="mt-auto pt-5 flex items-center justify-between gap-3 border-t border-border">
-                    <Link
-                      to="/realisations"
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
-                      aria-label={`Voir le projet : ${p.title}`}
-                    >
-                      Voir le projet <ArrowRight className="h-4 w-4" />
-                    </Link>
-                    <Link
-                      to="/contact"
-                      className="text-xs font-medium text-muted-foreground hover:text-primary transition-smooth"
-                    >
-                      Devis similaire →
-                    </Link>
+                      <Link
+                        to="/realisations"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
+                        aria-label={`Voir le projet : ${p.title}`}
+                      >
+                        Voir le projet <ArrowRight className="h-4 w-4" />
+                      </Link>
+                      <Link
+                        to="/contact"
+                        className="text-xs font-medium text-muted-foreground hover:text-primary transition-smooth"
+                      >
+                        Devis similaire →
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
               );
             })}
           </div>
@@ -253,12 +292,19 @@ function CityPage() {
       {/* TÉMOIGNAGES */}
       <section className="container mx-auto px-4 lg:px-8 py-20">
         <div className="max-w-3xl mb-12">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Témoignages</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-bold">Ils nous ont fait confiance à {city.name}</h2>
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+            Témoignages
+          </span>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold">
+            Ils nous ont fait confiance à {city.name}
+          </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {city.testimonials.map((t) => (
-            <figure key={t.name} className="p-8 bg-card rounded-2xl border border-border shadow-elegant">
+            <figure
+              key={t.name}
+              className="p-8 bg-card rounded-2xl border border-border shadow-elegant"
+            >
               <Quote className="h-8 w-8 text-accent" />
               <blockquote className="mt-4 text-lg leading-relaxed">"{t.quote}"</blockquote>
               <figcaption className="mt-6 pt-6 border-t border-border">
@@ -293,9 +339,17 @@ function CityPage() {
       {/* CTA */}
       <section className="container mx-auto px-4 lg:px-8 py-20">
         <div className="rounded-3xl bg-hero-gradient p-10 md:p-14 text-background text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">Prêt à passer au solaire à {city.name} ?</h2>
-          <p className="mt-4 text-background/85 max-w-2xl mx-auto">Étude gratuite et devis sous 24h pour votre projet résidentiel, professionnel ou agricole.</p>
-          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 bg-background text-primary font-semibold px-7 py-3.5 rounded-full hover:scale-105 transition-smooth">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Prêt à passer au solaire à {city.name} ?
+          </h2>
+          <p className="mt-4 text-background/85 max-w-2xl mx-auto">
+            Étude gratuite et devis sous 24h pour votre projet résidentiel, professionnel ou
+            agricole.
+          </p>
+          <Link
+            to="/contact"
+            className="mt-8 inline-flex items-center gap-2 bg-background text-primary font-semibold px-7 py-3.5 rounded-full hover:scale-105 transition-smooth"
+          >
             Demander mon devis <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

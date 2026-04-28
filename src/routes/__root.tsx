@@ -30,7 +30,11 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Malaaji Solar — Solutions solaires au Sénégal" },
-      { name: "description", content: "Distributeur officiel Livoltek (Hexing Afrique) : kits, panneaux, batteries et mini-centrales solaires au Sénégal." },
+      {
+        name: "description",
+        content:
+          "Distributeur officiel Livoltek (Hexing Afrique) : kits, panneaux, batteries et mini-centrales solaires au Sénégal.",
+      },
       { name: "author", content: "Malaaji Solar" },
       { property: "og:title", content: "Malaaji Solar" },
       { property: "og:description", content: "L'énergie solaire au service du Sénégal." },

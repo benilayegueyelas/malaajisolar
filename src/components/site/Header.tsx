@@ -17,7 +17,11 @@ export function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border/60">
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8 h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Malaaji Solar" className="h-12 w-auto object-contain transition-smooth group-hover:scale-105" />
+          <img
+            src={logo}
+            alt="Malaaji Solar"
+            className="h-12 w-auto object-contain transition-smooth group-hover:scale-105"
+          />
         </Link>
         <nav className="hidden lg:flex items-center gap-1">
           {nav.map((item) => (
@@ -25,7 +29,9 @@ export function Header() {
               key={item.to}
               to={item.to}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-smooth rounded-md hover:bg-secondary"
-              activeProps={{ className: "px-4 py-2 text-sm font-semibold text-primary rounded-md bg-secondary" }}
+              activeProps={{
+                className: "px-4 py-2 text-sm font-semibold text-primary rounded-md bg-secondary",
+              }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
@@ -59,7 +65,10 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <a href="tel:+221787158888" className="mt-2 inline-flex items-center justify-center gap-2 bg-leaf-gradient text-primary-foreground px-5 py-3 rounded-full text-sm font-semibold">
+            <a
+              href="tel:+221787158888"
+              className="mt-2 inline-flex items-center justify-center gap-2 bg-leaf-gradient text-primary-foreground px-5 py-3 rounded-full text-sm font-semibold"
+            >
               <Phone className="h-4 w-4" /> +221 78 715 88 88
             </a>
           </nav>
