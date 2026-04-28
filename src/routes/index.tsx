@@ -15,7 +15,9 @@ import hero from "@/assets/hero-solar.jpg";
 import realKayar from "@/assets/realisation-kayar.jpg";
 import realKoki from "@/assets/realisation-koki-diop.jpg";
 import realCentrale from "@/assets/realisation-centrale.jpg";
+import real2STV from "@/assets/realisation-2stv.jpg";
 import { CITIES } from "@/data/cities";
+import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -264,24 +266,24 @@ function HomePage() {
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src={realKayar}
-              alt="Installation 5KVA à Kayar"
-              loading="lazy"
-              className="rounded-2xl shadow-elegant aspect-[4/5] object-cover w-full"
+            <MediaPlaceholder
+              src={real2STV}
+              alt="Installation 2STV Dakar"
+              ratio="auto"
+              className="rounded-2xl shadow-elegant aspect-[4/5] w-full"
             />
             <div className="space-y-4 mt-10">
-              <img
+              <MediaPlaceholder
                 src={realKoki}
                 alt="Forage solaire Koki Diop"
-                loading="lazy"
-                className="rounded-2xl shadow-warm aspect-square object-cover w-full"
+                ratio="square"
+                className="rounded-2xl shadow-warm w-full"
               />
-              <img
+              <MediaPlaceholder
                 src={realCentrale}
                 alt="Mini-centrale Livoltek"
-                loading="lazy"
-                className="rounded-2xl shadow-elegant aspect-square object-cover w-full"
+                ratio="square"
+                className="rounded-2xl shadow-elegant w-full"
               />
             </div>
           </div>

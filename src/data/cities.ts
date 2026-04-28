@@ -6,6 +6,7 @@ import centrale from "@/assets/realisation-centrale.jpg";
 import batteries from "@/assets/realisation-batteries.jpg";
 import team from "@/assets/realisation-team.jpg";
 import stock from "@/assets/realisation-stock.jpg";
+import stv from "@/assets/realisation-2stv.jpg";
 
 export type CityRealisation = {
   img?: string;
@@ -110,6 +111,12 @@ export const CITIES: CityData[] = [
       countryCode: "SN",
     },
     realisations: [
+      {
+        img: stv,
+        title: "Installation 2STV",
+        power: "60 kWc",
+        desc: "Autoconsommation solaire pour les studios et bureaux de la chaîne de télévision 2STV.",
+      },
       {
         img: centrale,
         title: "Mini-centrale entreprise 169 kWc",

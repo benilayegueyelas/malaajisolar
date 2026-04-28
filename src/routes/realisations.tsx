@@ -1,11 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, Zap, ArrowRight } from "lucide-react";
+import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 import koki from "@/assets/realisation-koki-diop.jpg";
 import saintLouis from "@/assets/realisation-saint-louis.jpg";
 import sinthiou from "@/assets/realisation-sinthiou.jpg";
 import kayar from "@/assets/realisation-kayar.jpg";
 import batteries from "@/assets/realisation-batteries.jpg";
 import centrale from "@/assets/realisation-centrale.jpg";
+import stv from "@/assets/realisation-2stv.jpg";
 import stock from "@/assets/realisation-stock.jpg";
 import team from "@/assets/realisation-team.jpg";
 
@@ -31,6 +33,13 @@ export const Route = createFileRoute("/realisations")({
 });
 
 const projects = [
+  {
+    img: stv,
+    title: "Installation 2STV",
+    loc: "Dakar",
+    power: "60 kWc",
+    desc: "Autoconsommation solaire pour les studios et bureaux de la chaîne de télévision 2STV.",
+  },
   {
     img: koki,
     title: "Forage solaire de Koki Diop",
@@ -115,11 +124,10 @@ function RealisationsPage() {
               className="group bg-card rounded-2xl overflow-hidden border border-border hover:shadow-elegant hover:-translate-y-1 transition-smooth"
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img
+                <MediaPlaceholder
                   src={p.img}
                   alt={p.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700"
+                  className="w-full h-full group-hover:scale-110 transition-smooth duration-700"
                 />
               </div>
               <div className="p-6">
