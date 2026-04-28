@@ -1,5 +1,4 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { Layout } from "@/components/site/Layout";
 import { ArrowRight, MapPin, Phone, Quote, ShieldCheck, Sun, Zap } from "lucide-react";
 import { CITIES, getCity } from "@/data/cities";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
@@ -107,7 +106,7 @@ export const Route = createFileRoute("/solaire/$ville")({
   },
   component: CityPage,
   notFoundComponent: () => (
-    <Layout>
+    <>
       <section className="container mx-auto px-4 lg:px-8 py-32 text-center">
         <h1 className="text-4xl font-bold">Ville non couverte</h1>
         <p className="mt-4 text-muted-foreground">
@@ -120,7 +119,7 @@ export const Route = createFileRoute("/solaire/$ville")({
           Nous contacter <ArrowRight className="h-4 w-4" />
         </Link>
       </section>
-    </Layout>
+    </>
   ),
 });
 
@@ -129,7 +128,7 @@ function CityPage() {
   const otherCities = CITIES.filter((c) => c.slug !== city.slug);
 
   return (
-    <Layout>
+    <>
       {/* HERO */}
       <section className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
@@ -354,6 +353,6 @@ function CityPage() {
           </Link>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }

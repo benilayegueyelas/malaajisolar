@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Layout } from "@/components/site/Layout";
 import { MapPin, Zap, ArrowRight } from "lucide-react";
 import koki from "@/assets/realisation-koki-diop.jpg";
 import saintLouis from "@/assets/realisation-saint-louis.jpg";
@@ -92,7 +91,7 @@ const projects = [
 
 function RealisationsPage() {
   return (
-    <Layout>
+    <>
       <section className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
@@ -157,6 +156,6 @@ function RealisationsPage() {
           </Link>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }

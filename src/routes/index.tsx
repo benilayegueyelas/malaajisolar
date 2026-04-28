@@ -11,7 +11,6 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import { Layout } from "@/components/site/Layout";
 import hero from "@/assets/hero-solar.jpg";
 import realKayar from "@/assets/realisation-kayar.jpg";
 import realKoki from "@/assets/realisation-koki-diop.jpg";
@@ -135,7 +134,7 @@ const cities = [
 
 function HomePage() {
   return (
-    <Layout>
+    <>
       {/* HERO */}
       <section className="relative overflow-hidden">
         <img
@@ -413,6 +412,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }

@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Layout } from "@/components/site/Layout";
 import { MapPin, Phone, Mail, Send, Sun } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const [sent, setSent] = useState(false);
   return (
-    <Layout>
+    <>
       <section className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
@@ -154,7 +153,7 @@ function ContactPage() {
           )}
         </form>
       </section>
-    </Layout>
+    </>
   );
 }
 

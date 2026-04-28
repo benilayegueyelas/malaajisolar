@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Layout } from "@/components/site/Layout";
 import { Target, Eye, Leaf, Handshake, ArrowRight } from "lucide-react";
 import team from "@/assets/realisation-team.jpg";
 
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <Layout>
+    <>
       <section className="bg-secondary/40 py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
@@ -120,6 +119,6 @@ function AboutPage() {
           </Link>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }
