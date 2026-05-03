@@ -12,11 +12,12 @@ import {
   MapPin,
 } from "lucide-react";
 import hero from "@/assets/hero-solar.jpg";
-import real2STV from "@/assets/realisation-2stv.jpg";
-import real2STV2 from "@/assets/realisation-2stv-2.jpg";
-import realKayar from "@/assets/realisation-kayar.jpg";
 import { CITIES } from "@/data/cities";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
+
+const whyusLarge = "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solar%20farm%20in%20desert%20with%20mountains&image_size=square_hd";
+const whyusSmall1 = "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solar%20panels%20at%20sunset&image_size=square_hd";
+const whyusSmall2 = "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solar%20panel%20array%20at%20sunset&image_size=square_hd";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -266,21 +267,21 @@ function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <MediaPlaceholder
-              src={real2STV}
-              alt="Installation 2STV Dakar"
+              src={whyusLarge}
+              alt="Ferme solaire"
               ratio="auto"
               className="rounded-2xl shadow-elegant aspect-[4/5] w-full"
             />
             <div className="space-y-4 mt-10">
               <MediaPlaceholder
-                src={real2STV2}
-                alt="Installation 2STV Dakar - Vue 2"
+                src={whyusSmall1}
+                alt="Panneaux solaires au coucher de soleil"
                 ratio="square"
                 className="rounded-2xl shadow-warm w-full"
               />
               <MediaPlaceholder
-                src={realKayar}
-                alt="Installation solaire Kayar"
+                src={whyusSmall2}
+                alt="Réseau de panneaux solaires"
                 ratio="square"
                 className="rounded-2xl shadow-elegant w-full"
               />
