@@ -14,10 +14,9 @@ import {
 import hero from "@/assets/hero-solar.jpg";
 import { CITIES } from "@/data/cities";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
-
-const whyusLarge = "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solar%20farm%20in%20desert%20with%20mountains&image_size=square_hd";
-const whyusSmall1 = "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solar%20panels%20at%20sunset&image_size=square_hd";
-const whyusSmall2 = "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solar%20panel%20array%20at%20sunset&image_size=square_hd";
+import whyusLarge from "@/assets/solar_plant_in_africa_202605031522.jpeg";
+import whyusSmall1 from "@/assets/sunset-sky-reflects-solar-panel-sustainable-power-generation-generative-ai.jpg";
+import whyusSmall2 from "@/assets/sunset-nature-provides-renewable-energy-through-solar-power-generated-by-ai.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
