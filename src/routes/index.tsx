@@ -12,10 +12,9 @@ import {
   MapPin,
 } from "lucide-react";
 import hero from "@/assets/hero-solar.jpg";
-import realKayar from "@/assets/realisation-kayar.jpg";
-import realKoki from "@/assets/realisation-koki-diop.jpg";
-import realCentrale from "@/assets/realisation-centrale.jpg";
 import real2STV from "@/assets/realisation-2stv.jpg";
+import real2STV2 from "@/assets/realisation-2stv-2.jpg";
+import realKayar from "@/assets/realisation-kayar.jpg";
 import { CITIES } from "@/data/cities";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 
@@ -274,14 +273,14 @@ function HomePage() {
             />
             <div className="space-y-4 mt-10">
               <MediaPlaceholder
-                src={realKoki}
-                alt="Forage solaire Koki Diop"
+                src={real2STV2}
+                alt="Installation 2STV Dakar - Vue 2"
                 ratio="square"
                 className="rounded-2xl shadow-warm w-full"
               />
               <MediaPlaceholder
-                src={realCentrale}
-                alt="Mini-centrale Livoltek"
+                src={realKayar}
+                alt="Installation solaire Kayar"
                 ratio="square"
                 className="rounded-2xl shadow-elegant w-full"
               />
